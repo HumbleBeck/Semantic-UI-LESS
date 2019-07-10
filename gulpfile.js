@@ -5,32 +5,43 @@ const rtl = require('postcss-rtl');
 const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano');
 const concat = require('gulp-concat');
+const replace = require('gulp-replace');
+const rename = require('gulp-rename');
 
 const settings = require('./semantic.json');
 
-const build = (callback) => {
-  gulp.src(`definitions/**/{${settings.components.join(',')}}.less`)
-    .pipe(less())
-    .pipe(concat('dist.min.css'))
-    .pipe(postcss([
-      autoprefixer(),
-      rtl(),
-      cssnano({
-        preset: ['default', {
-          discardComments: {
-            removeAll: true,
-          },
-        }]
-      })
-    ]))
-    .pipe(gulp.dest('./'))
-    .on('end', callback);
+const build = async () => {
+  await new Promise(resolve => {
+    gulp.src(`definitions/**/{${settings.components.join(',')}}.less`)
+      .pipe(less())
+      .pipe(concat('main.min.css'))
+      .pipe(replace('../../themes/default/', './'))
+      .pipe(postcss([
+        autoprefixer(),
+        rtl(),
+        cssnano({
+          preset: ['default', {
+            discardComments: {
+              removeAll: true,
+            },
+          }]
+        })
+      ]))
+      .pipe(gulp.dest('./dist'))
+      .on('end', resolve);
+  });
 
+  await new Promise(resolve => {
+    gulp.src(`themes/**/assets/**/*`)
+      .pipe(rename((path) => {
+        path.dirname = path.dirname.split('/').pop();
+        console.log(path);
+        return path;
 
-  // gulp.src(source.themes + '/**/assets/**/' + globs.components + '?(s).*')
-  //   .pipe(gulpif(config.hasPermission, chmod(config.permission)))
-  //   .pipe(gulp.dest(output.themes));
-
+      }))
+      .pipe(gulp.dest('./dist/assets/'))
+      .on('end', resolve);
+  });
 };
 
 exports.default = build;
