@@ -1,17 +1,13 @@
 {
-  "name": "semantic-ui-less",
-  "version": "2.4.1",
-  "title": "Semantic UI",
-  "description": "LESS Only distribution of Semantic UI",
+  "name": "baslek-theme",
+  "version": "0.0.1",
+  "description": "baslek theme files",
   "homepage": "http://www.semantic-ui.com",
-  "author": "Jack Lukic <jack@semantic-ui.com>",
+  "author": "Bohdan Stadnyk <bohdan@stadnyk.me>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Semantic-Org/Semantic-UI-LESS.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Semantic-Org/Semantic-UI/issues"
+    "url": "https://github.com/HumbleBeck/baslek-theme"
   },
   "dependencies": {
     "autoprefixer": "^9.6.1",
@@ -22,6 +18,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
-    "postcss-rtl": "^1.3.3"
+    "postcss-rtl": "^1.3.3",
+    "yargs": "^13.3.0"
   }
 }

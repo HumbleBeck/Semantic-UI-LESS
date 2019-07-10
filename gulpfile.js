@@ -7,10 +7,13 @@ const cssnano = require('cssnano');
 const concat = require('gulp-concat');
 const replace = require('gulp-replace');
 const rename = require('gulp-rename');
+const argv = require('yargs').argv;
+const path = require('path');
 
 const settings = require('./semantic.json');
 
 const build = async () => {
+  const dist = argv.dist || './dist';
   await new Promise(resolve => {
     gulp.src(`definitions/**/{${settings.components.join(',')}}.less`)
       .pipe(less())
@@ -27,7 +30,7 @@ const build = async () => {
           }]
         })
       ]))
-      .pipe(gulp.dest('./dist'))
+      .pipe(gulp.dest(dist))
       .on('end', resolve);
   });
 
@@ -35,11 +38,9 @@ const build = async () => {
     gulp.src(`themes/**/assets/**/*`)
       .pipe(rename((path) => {
         path.dirname = path.dirname.split('/').pop();
-        console.log(path);
         return path;
-
       }))
-      .pipe(gulp.dest('./dist/assets/'))
+      .pipe(gulp.dest(path.join(dist, '.assets/')))
       .on('end', resolve);
   });
 };
