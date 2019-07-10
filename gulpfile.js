@@ -38,8 +38,6 @@ const build = async () => {
     gulp.src('themes/**/assets/**/*.*')
       .pipe(rename((path) => {
         path.dirname = path.dirname.split('/').pop();
-        console.log(path);
-        
         return path;
       }))
       .pipe(gulp.dest(path.join(dist, 'assets/')))
