@@ -1,3 +1,14 @@
 /*******************************
      User Global Variables
 *******************************/
+
+@fontName: 'Montserrat';
+
+@emSize: 16px;
+@fontSize: 16px;
+
+@primaryColor: @yellow;
+
+@lightPrimaryColor: @lightYellow;
+
+@yellow: #fdd701;

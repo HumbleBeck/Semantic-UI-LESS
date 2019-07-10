@@ -1,3 +1,13 @@
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.segment.rounded {
+  border-radius: 2 * @borderRadius;
+  overflow: hidden;
+}
+
+.ui.segment.padless {
+  padding: 0;
+  margin: 0;
+}

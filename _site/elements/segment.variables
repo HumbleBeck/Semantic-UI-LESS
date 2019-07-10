@@ -1,3 +1,7 @@
 /*******************************
     User Variable Overrides
 *******************************/
+
+@basicBackground: @background;
+@basicBoxShadow: @boxShadow;
+@basicBorderRadius: 0px;
