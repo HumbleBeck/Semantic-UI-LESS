@@ -12,7 +12,7 @@ const path = require('path');
 
 const settings = require('./semantic.json');
 
-const build = async () => {
+const buildCss = async () => {
   const dist = argv.dist || './dist';
   await new Promise(resolve => {
     gulp.src(`definitions/**/{${settings.components.join(',')}}.less`)
@@ -33,9 +33,12 @@ const build = async () => {
       .pipe(gulp.dest(dist))
       .on('end', resolve);
   });
+};
 
+const buildAssets = async () => {
+  const dist = argv.dist || './dist';
   await new Promise(resolve => {
-    gulp.src('themes/**/assets/**/*.*')
+    gulp.src('*/assets/**/*.*')
       .pipe(rename((path) => {
         path.dirname = path.dirname.split('/').pop();
         return path;
@@ -45,4 +48,10 @@ const build = async () => {
   });
 };
 
-exports.default = build;
+const watchCss = async () => {
+  gulp.watch('_site/**/*.(overrides|variables)', buildCss);
+};
+
+exports.default = gulp.series(buildCss, buildAssets);
+exports.buildCss = buildCss;
+exports.watch = watchCss;

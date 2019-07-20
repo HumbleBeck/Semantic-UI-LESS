@@ -1,3 +1,31 @@
 /*******************************
          Site Overrides
 *******************************/
+
+@font-face {
+  font-family: @fontNameEn;
+  src: url("@{fontPath}/@{fontNameEn}Book.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: @fontNameEn;
+  src: url("@{fontPath}/@{fontNameEn}Bold.woff") format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: @fontNameAr;
+  src: url("@{fontPath}/@{fontNameAr}Book.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: @fontNameAr;
+  src: url("@{fontPath}/@{fontNameAr}Bold.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

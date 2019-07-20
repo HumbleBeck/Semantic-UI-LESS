@@ -2,13 +2,56 @@
      User Global Variables
 *******************************/
 
-@fontName: 'Montserrat';
+/*-------------------
+       Fonts
+--------------------*/
+@importGoogleFonts: false;
 
-@emSize: 16px;
-@fontSize: 16px;
+@fontName: 'Baslek';
+@fontNameEn: '@{fontName}En';
+@fontNameAr: '@{fontName}Ar';
+
+@headerFont: @fontNameEn, @fontNameAr, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont: @fontNameEn, @fontNameAr, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+/*-------------------
+      Base Sizes
+--------------------*/
+@emSize: 20px;
+@fontSize: 20px;
+
+@yellow: #fdd700;
+@black: #333;
+@white: #fff;
+@gray: #7c7c7c;
 
 @primaryColor: @yellow;
-
 @lightPrimaryColor: @lightYellow;
+@textColor: @black;
 
-@yellow: #fdd701;
+/*--------------
+  Page Heading
+---------------*/
+
+@h1: unit((53 / @fontSize), rem);
+@h2: unit((30 / @fontSize), rem);
+@h3: unit((30 / @fontSize), rem);
+@h4: unit((15 / @fontSize), rem);
+@h5: unit((@fontSize / @fontSize), rem);
+
+@headerLineHeight: 1.9;
+@lineHeight: 1.9;
+
+/*--------------
+   Form Input
+---------------*/
+
+/* This adjusts the default form input across all elements */
+@inputVerticalPadding: @relative18px;
+
+
+/*-------------------
+    Derived Values
+--------------------*/
+
+@headerBottomMargin: 2.5rem;

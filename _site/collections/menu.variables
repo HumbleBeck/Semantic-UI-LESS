@@ -1,3 +1,10 @@
 /*******************************
     User Variable Overrides
 *******************************/
+@mini: @11px;
+@tiny: @12px;
+@small: @13px;
+@large: @15px;
+@big: @16px;
+@huge: @17px;
+@massive: @30px;

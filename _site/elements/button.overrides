@@ -1,3 +1,8 @@
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.primary.buttons .button,
+.ui.primary.button {
+  background-image: @primaryColoredBackgroundImage;
+}

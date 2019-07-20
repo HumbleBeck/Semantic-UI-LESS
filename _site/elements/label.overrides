@@ -1,3 +1,7 @@
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.grey.ribbon.label {
+  border-color: @greyRibbonShadow !important;
+}
