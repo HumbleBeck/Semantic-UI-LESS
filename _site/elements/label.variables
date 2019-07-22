@@ -3,3 +3,4 @@
 *******************************/
 
 @greyRibbonShadow: @black;
+@ribbonDistance: @ribbonTriangleSize;

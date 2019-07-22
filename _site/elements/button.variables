@@ -2,6 +2,8 @@
     User Variable Overrides
 *******************************/
 
-@primaryColoredBackgroundImage: linear-gradient(-260deg, @yellow, @orange);
+@primaryColoredBackgroundImage: linear-gradient(260deg, @yellow, @orange);
 
 @coloredBoxShadow: 0 3px 20px 0 rgba(0, 0, 0, 0.3);
+@basicBorderSize: 3px;
+@basicColoredBorderSize: 3px;

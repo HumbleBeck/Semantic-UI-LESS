@@ -2,8 +2,9 @@
          Site Overrides
 *******************************/
 
-.ui.header .ui.divider {
+.ui.header .ui.divider:not(.horizontal) {
   max-width: 100px;
+  border-radius: 3px;
 }
 
 .ui.header.center.aligned .ui.divider {

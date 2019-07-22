@@ -29,3 +29,21 @@
   font-weight: 700;
   font-style: normal;
 }
+
+
+/* Mobile */
+@media only screen and (max-width: @largestMobileScreen) {
+  html {
+    font-size: @emMobileSize;
+    line-height: @mobileLineHeight;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
+  html {
+    font-size: @emTabletSize;
+    line-height: @tabletLineHeight;
+
+  }
+}

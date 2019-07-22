@@ -1,3 +1,8 @@
 /*******************************
     User Variable Overrides
 *******************************/
+
+@shadowWidth: 5px;
+@shadowColor: @yellow;
+
+@highlightWidth: 0px;
