@@ -2,6 +2,20 @@
          Site Overrides
 *******************************/
 
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.labels.scrollable {
+    display: flex;
+    overflow-x: auto;
+  }
+}
+
 .ui.grey.ribbon.label {
-  border-color: @greyRibbonShadow !important;
+  border-color: @greyRibbonShadow  !important;
+}
+
+.ui.basic.label.active {
+  background-image: linear-gradient(to bottom, @yellow, @orange) !important;
+  box-shadow: 0 5px 10px 0 rgba(235, 161, 27, 0.5);
+  border: none;
+  color: @white  !important;
 }

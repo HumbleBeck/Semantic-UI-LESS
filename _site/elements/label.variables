@@ -2,5 +2,18 @@
     User Variable Overrides
 *******************************/
 
+/* Sizing */
+@mini    : @9px;
+@tiny    : @absoluteMini;
+@small   : @absoluteTiny;
+@medium  : @absoluteSmall;
+@large   : @absoluteMedium;
+@big     : @absoluteBig;
+@huge    : @absoluteHuge;
+@massive : @absoluteMassive;
+
+@grey: @lightGrey;
+
+
 @greyRibbonShadow: @black;
 @ribbonDistance: @ribbonTriangleSize;
