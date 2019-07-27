@@ -19,3 +19,6 @@
   border: none;
   color: @white  !important;
 }
+.ui.card .image>.ribbon.label, .ui.image>.ribbon.label {
+  z-index: 1;
+}
