@@ -11,7 +11,7 @@
             Theme
 *******************************/
 
-@type    : 'element';
+@type : 'element';
 @element : 'placeholder';
 
 @import (multiple) '../../theme.config';
@@ -31,33 +31,38 @@
   max-width: @placeholderMaxWidth;
 }
 
-@keyframes placeholderShimmer{
+@keyframes placeholderShimmer {
   0% {
     background-position: -@placeholderLoadingGradientWidth 0
   }
+
   100% {
     background-position: @placeholderLoadingGradientWidth 0
   }
 }
 
-.ui.placeholder + .ui.placeholder {
+.ui.placeholder+.ui.placeholder {
   margin-top: @consecutivePlaceholderSpacing;
 }
-.ui.placeholder + .ui.placeholder {
+
+.ui.placeholder+.ui.placeholder {
   animation-delay: @placeholderAnimationInterval;
 }
-.ui.placeholder + .ui.placeholder + .ui.placeholder {
+
+.ui.placeholder+.ui.placeholder+.ui.placeholder {
   animation-delay: (@placeholderAnimationInterval * 2);
 }
-.ui.placeholder + .ui.placeholder + .ui.placeholder + .ui.placeholder {
+
+.ui.placeholder+.ui.placeholder+.ui.placeholder+.ui.placeholder {
   animation-delay: (@placeholderAnimationInterval * 3);
 }
-.ui.placeholder + .ui.placeholder + .ui.placeholder + .ui.placeholder + .ui.placeholder {
+
+.ui.placeholder+.ui.placeholder+.ui.placeholder+.ui.placeholder+.ui.placeholder {
   animation-delay: (@placeholderAnimationInterval * 4);
 }
 
 .ui.placeholder,
-.ui.placeholder > :before,
+.ui.placeholder> :before,
 .ui.placeholder .image.header:after,
 .ui.placeholder .line,
 .ui.placeholder .line:after {
@@ -68,12 +73,14 @@
 .ui.placeholder .image:not(.header):not(.ui) {
   height: @placeholderImageHeight;
 }
+
 .ui.placeholder .square.image:not(.header) {
   height: 0px;
   overflow: hidden;
   /* 1/1 aspect ratio */
   padding-top: 100%;
 }
+
 .ui.placeholder .rectangular.image:not(.header) {
   height: 0px;
   overflow: hidden;
@@ -87,6 +94,7 @@
   position: relative;
   height: @placeholderLineMargin;
 }
+
 .ui.placeholder .line:before,
 .ui.placeholder .line:after {
   top: 100%;
@@ -94,9 +102,11 @@
   content: '';
   background-color: inherit;
 }
+
 .ui.placeholder .line:before {
   left: 0px;
 }
+
 .ui.placeholder .line:after {
   right: 0px;
 }
@@ -105,10 +115,12 @@
 .ui.placeholder .line {
   margin-bottom: @placeholderLineHeight;
 }
+
 .ui.placeholder .line:before,
 .ui.placeholder .line:after {
   height: @placeholderLineHeight;
 }
+
 .ui.placeholder .line:not(:first-child) {
   margin-top: @placeholderLineHeight;
 }
@@ -123,15 +135,19 @@
 .ui.placeholder .line:nth-child(1):after {
   width: @placeholderLineOneOutdent;
 }
+
 .ui.placeholder .line:nth-child(2):after {
   width: @placeholderLineTwoOutdent;
 }
+
 .ui.placeholder .line:nth-child(3):after {
   width: @placeholderLineThreeOutdent;
 }
+
 .ui.placeholder .line:nth-child(4):after {
   width: @placeholderLineFourOutdent;
 }
+
 .ui.placeholder .line:nth-child(5):after {
   width: @placeholderLineFiveOutdent;
 }
@@ -140,16 +156,20 @@
 .ui.placeholder .header .line {
   margin-bottom: @placeholderHeaderLineHeight;
 }
+
 .ui.placeholder .header .line:before,
 .ui.placeholder .header .line:after {
   height: @placeholderHeaderLineHeight;
 }
+
 .ui.placeholder .header .line:not(:first-child) {
   margin-top: @placeholderHeaderLineHeight;
 }
+
 .ui.placeholder .header .line:after {
   width: @placeholderHeaderLineOneOutdent;
 }
+
 .ui.placeholder .header .line:nth-child(2):after {
   width: @placeholderHeaderLineTwoOutdent;
 }
@@ -158,9 +178,11 @@
 .ui.placeholder .image.header .line {
   margin-left: @placeholderImageWidth;
 }
+
 .ui.placeholder .image.header .line:before {
   width: @placeholderImageTextIndent;
 }
+
 .ui.placeholder .image.header:after {
   display: block;
   height: @placeholderLineMargin;
@@ -174,6 +196,7 @@
 .ui.placeholder .header .line:first-child {
   height: 0.01px;
 }
+
 .ui.placeholder .image:not(:first-child):before,
 .ui.placeholder .paragraph:not(:first-child):before,
 .ui.placeholder .header:not(:first-child):before {
@@ -186,8 +209,9 @@
 .ui.inverted.placeholder {
   background-image: @placeholderInvertedLoadingGradient;
 }
+
 .ui.inverted.placeholder,
-.ui.inverted.placeholder > :before,
+.ui.inverted.placeholder> :before,
 .ui.inverted.placeholder .image.header:after,
 .ui.inverted.placeholder .line,
 .ui.inverted.placeholder .line:after {
@@ -206,18 +230,23 @@
 .ui.placeholder .full.line.line.line:after {
   width: @placeholderFullLineOutdent;
 }
+
 .ui.placeholder .very.long.line.line.line:after {
   width: @placeholderVeryLongLineOutdent;
 }
+
 .ui.placeholder .long.line.line.line:after {
   width: @placeholderLongLineOutdent;
 }
+
 .ui.placeholder .medium.line.line.line:after {
   width: @placeholderMediumLineOutdent;
 }
+
 .ui.placeholder .short.line.line.line:after {
   width: @placeholderShortLineOutdent;
 }
+
 .ui.placeholder .very.short.line.line.line:after {
   width: @placeholderVeryShortLineOutdent;
 }
@@ -230,3 +259,5 @@
 .ui.fluid.placeholder {
   max-width: none;
 }
+
+.loadUIOverrides();

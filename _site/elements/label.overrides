@@ -19,6 +19,12 @@
   border: none;
   color: @white  !important;
 }
-.ui.card .image>.ribbon.label, .ui.image>.ribbon.label {
+
+.ui.card .image>.ribbon.label,
+.ui.image>.ribbon.label {
   z-index: 1;
+}
+
+.ui.basic.label {
+  white-space: nowrap;
 }

@@ -1,0 +1,11 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+@largeFontSize  : unit(@h2, em);
+@placeholderAvatarSize: 2em;
+@tinyWidth: 100px;
+
+@topMargin: @headerTopMargin;
+@bottomMargin: @headerBottomMargin;
+@margin: @topMargin 0em @bottomMargin;

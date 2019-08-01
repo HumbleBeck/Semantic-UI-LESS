@@ -1,0 +1,2 @@
+@widescreenRatio: (16/9) * 100%;
+@iconSize: 3rem;

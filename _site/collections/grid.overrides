@@ -26,7 +26,6 @@
   padding: (@rowSpacing * 2) 0;
 }
 
-
 /* Tablet Only */
 @media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
 
@@ -54,5 +53,24 @@
   .ui.grid>.doubling.row.padded.very>.column,
   .ui.doubling.grid>.row.padded.very>.column {
     padding-bottom: (@rowSpacing * 2) !important;
+  }
+
+  .ui.grid>.column:not(.row).attached.left {
+    padding-top: 0;
+  }
+
+  .ui.grid>.column:not(.row).attached.right {
+    padding-bottom: 0;
+  }
+}
+
+/* Not mobile */
+@media only screen and (min-width: @tabletBreakpoint) {
+  .ui.grid>.column:not(.row).attached.left {
+    padding-left: 0;
+  }
+
+  .ui.grid>.column:not(.row).attached.right {
+    padding-right: 0;
   }
 }

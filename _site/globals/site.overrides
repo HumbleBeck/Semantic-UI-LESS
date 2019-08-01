@@ -30,13 +30,6 @@
   font-style: normal;
 }
 
-// /* Mobile */
-// @media only screen and (max-width: @largestMobileScreen) {
-//   html {
-//     font-size: @emMobileSize;
-//     line-height: @mobileLineHeight;
-//   }
-// }
 
 .inline-block {
   display: inline-block;

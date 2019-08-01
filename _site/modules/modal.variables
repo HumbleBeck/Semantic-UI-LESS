@@ -1,3 +1,7 @@
 /*******************************
          Site Overrides
 *******************************/
+@closeColor: @grey;
+@closeSize: 0.75em;
+
+@closeHitbox: -1.25rem;
