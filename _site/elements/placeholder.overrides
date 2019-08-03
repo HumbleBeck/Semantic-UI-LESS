@@ -32,3 +32,15 @@
   width: @tinyWidth;
   height: @tinyWidth;
 }
+
+.ui.placeholder[class*="4:3"] {
+  position: relative;
+  padding: 66.6% 50%;
+}
+
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.placeholder[class*="4:3"] {
+    position: relative;
+    padding: 50% 50%;
+  }
+}

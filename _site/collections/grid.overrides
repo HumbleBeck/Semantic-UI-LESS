@@ -7,10 +7,18 @@
   width: auto;
 }
 
-.ui.grid>.column.paddless:not(.row),
-.ui.grid>.row>.column.paddless {
+.ui.grid>.column.padless:not(.row),
+.ui.grid>.row>.column.padless,
+.ui.grid>.row.padless:not(:first-child):not(:last-child) {
   padding-top: 0;
   padding-bottom: 0;
+}
+.ui.grid>.row.padless:first-child {
+  padding-bottom: 0;
+
+}
+.ui.grid>.row.padless:last-child {
+  padding-top: 0;
 }
 
 .ui.grid>.column.grow:not(.row),

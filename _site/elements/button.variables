@@ -4,6 +4,6 @@
 
 @primaryColoredBackgroundImage: linear-gradient(260deg, @yellow, @orange);
 
-@coloredBoxShadow: 0 3px 20px 0 rgba(0, 0, 0, 0.3);
+@coloredBoxShadow: 0 10px 20px 0 rgba(235, 161, 27, 0.53);
 @basicBorderSize: 3px;
 @basicColoredBorderSize: 3px;

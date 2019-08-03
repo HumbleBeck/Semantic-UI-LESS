@@ -1,3 +1,10 @@
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.ratings {
+  display: inline-flex;
+  font-weight: normal;
+  font-size: initial;
+  line-height: normal;
+}

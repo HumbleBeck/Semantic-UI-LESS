@@ -3,7 +3,7 @@
 *******************************/
 
 /* Sizing */
-@mini    : @9px;
+@mini    : @10px;
 @tiny    : @absoluteMini;
 @small   : @absoluteTiny;
 @medium  : @absoluteSmall;

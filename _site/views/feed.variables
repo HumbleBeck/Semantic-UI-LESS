@@ -2,4 +2,4 @@
     User Variable Overrides
 *******************************/
 
-@eventPadding: @15px 0em;
+@eventPadding: @10px 0em;

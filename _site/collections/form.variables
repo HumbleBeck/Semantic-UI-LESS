@@ -2,5 +2,5 @@
     User Variable Overrides
 *******************************/
 @rowDistance: 1.5em;
-@inputFontSize: 0.8em;
 @labelDistance: @10px;
+@inputBorder: 2px solid @borderColor;

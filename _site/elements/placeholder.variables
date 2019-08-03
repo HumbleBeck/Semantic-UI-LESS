@@ -9,3 +9,4 @@
 @topMargin: @headerTopMargin;
 @bottomMargin: @headerBottomMargin;
 @margin: @topMargin 0em @bottomMargin;
+@placeholderImageHeight: 0;

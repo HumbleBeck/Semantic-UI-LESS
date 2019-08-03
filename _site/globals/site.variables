@@ -32,8 +32,8 @@
 @yellow: #fdd700;
 @grey: #7c7c7c;
 @black: #333;
+@orange: #eba11b;
 @lightGrey: #999;
-
 
 @miniSize: ((unit(@emSize) - 6) / unit(@emSize));
 @tinySize: ((unit(@emSize) - 4) / unit(@emSize));
@@ -43,3 +43,8 @@
 @bigSize: ((unit(@emSize) + 8) / unit(@emSize));
 @hugeSize: ((unit(@emSize) + 12) / unit(@emSize));
 @massiveSize: ((unit(@emSize) + 16) / unit(@emSize));
+
+
+@inputVerticalPadding: @relative12px;
+
+@borderColor: rgba(51, 51, 51, 0.1);
