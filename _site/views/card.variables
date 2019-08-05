@@ -5,3 +5,5 @@
 @shadowDistance: 5px;
 @solidBorderColor: rgba(0, 0, 0, 0.1);
 @boxShadow: 0px @shadowDistance 30px 0px @solidBorderColor;
+
+@horizontalSpacing: 2em;

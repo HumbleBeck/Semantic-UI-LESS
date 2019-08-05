@@ -16,7 +16,9 @@
 
 @media only screen and (max-width: @largestMobileScreen) {
   .ui.image[class*="4:3"]:not(.avatar),
-  .ui.card>.image[class*="4:3"]:not(.avatar) {
+  .ui.card>.image[class*="4:3"]:not(.avatar),
+  .ui.image[class*="16:9"]:not(.avatar),
+  .ui.card>.image[class*="16:9"]:not(.avatar) {
     position: relative;
     padding: 50% 50%;
   }

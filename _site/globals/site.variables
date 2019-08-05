@@ -13,6 +13,7 @@
 
 @emSize: 16px;
 @fontSize: @emSize;
+@mobileFontSize: unit(unit(@emSize) - 2, px);
 
 @relativeBorderRadius: @relative5px;
 @absoluteBorderRadius: @5px;
@@ -21,7 +22,6 @@
 @secondaryColor: @black;
 
 @lineHeight: 1.9em;
-@headerLineHeight: 1.9em;
 
 @h1 : unit((53 / @fontSize), rem);
 @h2 : unit((30 / @fontSize), rem);

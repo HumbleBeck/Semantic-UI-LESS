@@ -30,6 +30,15 @@
   font-style: normal;
 }
 
+@media only screen and (max-width: @largestMobileScreen) {
+  html {
+    font-size: @mobileFontSize;
+  }
+
+  body {
+    font-size: @mobileFontSize;
+  }
+}
 
 .inline-block {
   display: inline-block;
@@ -38,6 +47,7 @@
 p.center.aligned {
   text-align: center;
 }
+
 .ui.grey {
   color: @grey;
 }
