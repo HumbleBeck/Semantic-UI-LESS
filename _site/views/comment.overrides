@@ -1,6 +1,11 @@
 /*******************************
     User Variable Overrides
 *******************************/
-.ui.comments > .ui.header {
-    margin-bottom: 0;
+
+.ui.comments>.reply.form:first-child {
+    margin-top: 0;
+}
+
+.ui.comments .comment .content .metadata:first-child {
+  margin-left: 0em;
 }
