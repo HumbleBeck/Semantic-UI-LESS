@@ -2,9 +2,9 @@
          Site Overrides
 *******************************/
 
-@largeFontSize  : unit(@h2, em);
-@placeholderAvatarSize: 2em;
-@tinyWidth: 100px;
+@largeFontSize: unit(@h2, em);
+@placeholderAvatarSize: 100px;
+@largeWidth: 120px;
 
 @topMargin: @headerTopMargin;
 @bottomMargin: @headerBottomMargin;

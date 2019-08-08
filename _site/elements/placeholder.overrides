@@ -28,9 +28,9 @@
   border: solid 3px @yellow;
 }
 
-.ui.placeholder.avatar.tiny {
-  width: @tinyWidth;
-  height: @tinyWidth;
+.ui.placeholder.avatar.large {
+  width: @largeWidth;
+  height: @largeWidth;
 }
 
 .ui.placeholder[class*="4:3"] {
