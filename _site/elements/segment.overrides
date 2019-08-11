@@ -5,7 +5,6 @@
 .ui.inverted.vertical.segment.home-header {
   min-height: 600px;
   background-color: fade(darken(@yellow, 10), 70%);
-  background-image: url(https://baslek-dev-bucket.s3.amazonaws.com/talents@3x.jpg);
   background-position: center;
   background-size: cover;
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.3);

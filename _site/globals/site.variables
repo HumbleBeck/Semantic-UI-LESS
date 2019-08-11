@@ -2,7 +2,7 @@
          Site Settings
 *******************************/
 
-@fontName: 'Baslek';
+@fontName: 'Ehdaa';
 @fontNameEn: '@{fontName}En';
 @fontNameAr: '@{fontName}Ar';
 
