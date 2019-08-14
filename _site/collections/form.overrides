@@ -1,3 +1,7 @@
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.form .field.center.aligned {
+  text-align: center;
+}
