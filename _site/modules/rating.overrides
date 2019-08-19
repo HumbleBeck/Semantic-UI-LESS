@@ -6,5 +6,5 @@
   display: inline-flex;
   font-weight: normal;
   font-size: initial;
-  line-height: normal;
+  flex-direction: column;
 }

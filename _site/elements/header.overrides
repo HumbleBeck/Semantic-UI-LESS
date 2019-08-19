@@ -2,10 +2,6 @@
          Site Overrides
 *******************************/
 
-.ui.header > .ui.ratings {
-  margin-left: @20px;
-}
-
 .ui.header>.image:not(.icon).large {
   width: 6em;
 }
