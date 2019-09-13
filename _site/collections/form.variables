@@ -1,6 +1,3 @@
 /*******************************
     User Variable Overrides
 *******************************/
-@rowDistance: 1.5em;
-@labelDistance: @10px;
-@inputBorder: 2px solid @borderColor;

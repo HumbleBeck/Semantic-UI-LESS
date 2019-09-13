@@ -1,0 +1,13 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.ui.segment.home-block {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ui.vertical.segment {
+  border-bottom: none;
+}

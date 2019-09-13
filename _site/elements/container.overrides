@@ -1,7 +1,3 @@
 /*******************************
          Site Overrides
 *******************************/
-
-.ui.container.home-slogan {
-  margin-top: 7rem;
-}

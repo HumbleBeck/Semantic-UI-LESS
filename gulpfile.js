@@ -12,11 +12,15 @@ const path = require('path');
 
 const settings = require('./semantic.json');
 
-const buildCss = async () => {
+const buildCss = (theme) => async () => {
   const dist = argv.dist || './dist';
   await new Promise(resolve => {
-    gulp.src(`definitions/**/{${settings.components.join(',')}}.less`)
-      .pipe(less())
+    gulp.src(`definitions/**/{${settings.components[theme].join(',')}}.less`)
+      .pipe(less({
+        globalVars: {
+          CURRENT_THEME: theme,
+        }
+      }))
       .pipe(concat('main.min.css'))
       .pipe(replace('../../themes/default/', './'))
       .pipe(postcss([
@@ -35,10 +39,10 @@ const buildCss = async () => {
   });
 };
 
-const buildAssets = async () => {
+const buildAssets = (theme) => async () => {
   const dist = argv.dist || './dist';
   await new Promise(resolve => {
-    gulp.src('*/assets/**/*.*')
+    gulp.src(`themes/${theme}/assets/**/*.*`)
       .pipe(rename((path) => {
         path.dirname = path.dirname.split('/').pop();
         return path;
@@ -48,10 +52,20 @@ const buildAssets = async () => {
   });
 };
 
-const watchCss = async () => {
-  gulp.watch('_site/**/*.(overrides|variables)', buildCss);
+const watchEhdaa = async () => {
+  gulp.watch('themes/ehdaa/**/*.(overrides|variables)', buildCss('ehdaa'));
 };
 
-exports.default = gulp.series(buildCss, buildAssets);
-exports.buildCss = buildCss;
-exports.watch = watchCss;
+const watchCoffeeman = async () => {
+  gulp.watch('themes/coffeeman/**/*.(overrides|variables)', buildCss('coffeeman'));
+};
+
+// exports.default = gulp.series(buildCss, buildAssets);
+// exports.buildCss = buildCss;
+
+exports.buildEhdaa = gulp.series(buildCss('ehdaa'), buildAssets('ehdaa'));
+exports.buildCoffeeman = gulp.series(buildCss('coffeeman'), buildAssets('coffeeman'));
+
+
+exports.watchEhdaa = watchEhdaa;
+exports.watchCoffeeman = watchCoffeeman;

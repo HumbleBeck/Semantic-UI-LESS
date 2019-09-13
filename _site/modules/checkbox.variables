@@ -1,8 +1,3 @@
 /*******************************
     User Variable Overrides
 *******************************/
-
-@checkboxActiveBorderColor: @yellow;
-@checkboxBorder: 2px solid @solidBorderColor;
-@checkboxSize: 18px;
-@medium: @small;

@@ -1,0 +1,50 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.ui.placeholder {
+  font-size: @fontSize;
+}
+
+.ui.placeholder.center.aligned {
+  margin: @topMargin auto @bottomMargin;
+}
+
+.ui.placeholder.header {
+  margin: @margin;
+}
+
+.ui.placeholder.header:last-child {
+  margin-bottom: 0;
+}
+
+.ui.placeholder .header.large {
+  font-size: @largeFontSize;
+}
+
+.ui.placeholder.avatar {
+  width: @placeholderAvatarSize;
+  height: @placeholderAvatarSize;
+  -webkit-border-radius: @circularRadius;
+  -moz-border-radius: @circularRadius;
+  border-radius: @circularRadius;
+  box-shadow: 0 7px 20px 0 rgba(235, 161, 27, 0.5);
+  border: solid 3px @yellow;
+}
+
+.ui.placeholder.avatar.large {
+  width: @largeWidth;
+  height: @largeWidth;
+}
+
+.ui.placeholder[class*="4:3"] {
+  position: relative;
+  padding: 66.6% 50%;
+}
+
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.placeholder[class*="4:3"] {
+    position: relative;
+    padding: 50% 50%;
+  }
+}

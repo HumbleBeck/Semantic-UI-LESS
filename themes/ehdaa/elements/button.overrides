@@ -1,0 +1,13 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.ui.primary.buttons .button,
+.ui.primary.button {
+  background-image: @primaryColoredBackgroundImage;
+}
+
+.ui.basic.yellow.buttons .button,
+.ui.basic.yellow.button {
+  color: inherit!important;
+}

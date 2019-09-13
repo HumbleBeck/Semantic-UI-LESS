@@ -1,0 +1,16 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.ui.grid>.column.padless:not(.row),
+.ui.grid>.row>.column.padless {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.grid>.column.padless:not(.row),
+  .ui.grid>.row>.column.padless {
+    padding: 0!important;
+  }
+}

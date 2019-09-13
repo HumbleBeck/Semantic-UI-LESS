@@ -1,0 +1,12 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.ui.header>.image:not(.icon).large {
+  width: 6em;
+}
+
+.ui.header > .ui.placeholder {
+  display: inline-block;
+  margin-right: @imageMargin;
+}

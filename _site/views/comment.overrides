@@ -1,7 +1,3 @@
 /*******************************
     User Variable Overrides
 *******************************/
-
-.ui.comments .comment .content .metadata:first-child {
-  margin-left: 0em;
-}

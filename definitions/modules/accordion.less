@@ -128,8 +128,8 @@
   background: @styledBackground;
   box-shadow: @styledBoxShadow;
 }
-.ui.styled.accordion .title,
-.ui.styled.accordion .accordion .title {
+.ui.styled.accordion > .title,
+.ui.styled.accordion > .accordion > .title {
   margin: @styledTitleMargin;
   padding: @styledTitlePadding;
   color: @styledTitleColor;
@@ -138,18 +138,18 @@
   transition: @styledTitleTransition;
 }
 .ui.styled.accordion > .title:first-child,
-.ui.styled.accordion .accordion .title:first-child {
+.ui.styled.accordion > .accordion > .title:first-child {
   border-top: none;
 }
 
 
 /* Content */
-.ui.styled.accordion .content,
-.ui.styled.accordion .accordion .content {
+.ui.styled.accordion > .content,
+.ui.styled.accordion > .accordion > .content {
   margin: @styledContentMargin;
   padding: @styledContentPadding;
 }
-.ui.styled.accordion .accordion .content {
+.ui.styled.accordion > .accordion > .content {
   padding: @styledChildContentMargin;
   padding: @styledChildContentPadding;
 }

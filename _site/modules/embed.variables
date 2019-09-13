@@ -1,7 +1,0 @@
-@widescreenRatio: (16/9) * 100%;
-@iconSize: 3rem;
-@hoverPlaceholderBackground: none;
-
-@placeholderBackground: none;
-@placeholderBackgroundOpacity: 1;
-@placeholderBackgroundTransition: none;
